@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="checkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Base with subtle squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer Shield -->
+  <g filter="url(#dropShadow)">
+    <path d="M256 72 L384 128 C384 270 328 376 256 424 C184 376 128 270 128 128 Z" fill="url(#shieldGrad)" />
+    
+    <!-- Inner White Core -->
+    <path d="M256 98 L360 144 C360 260 314 348 256 388 C198 348 152 260 152 144 Z" fill="#ffffff" />
+    
+    <!-- Central Checkmark with safety leaf accents -->
+    <path d="M206 248 L242 284 L318 196" stroke="url(#checkGrad)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

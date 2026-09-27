@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix DASA",
+  "description": "Sistem Audit HR Corporate \u0026 K3 Terpadu PT. Dame Alam Sejahtera (DAS Group) - Waste Management Service, Transporter Nasional, Plant Karawang \u0026 Sukabumi",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
